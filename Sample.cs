@@ -7,6 +7,8 @@ using System.Xml;
 
 class Sample
 {
+    
+    
     public void Dictionary()
     {
         // var
@@ -111,7 +113,7 @@ class Sample
     }
 
 
-    public void Array()
+    public void Arrary()
     {
         // 1
         string[] players;

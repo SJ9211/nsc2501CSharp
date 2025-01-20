@@ -1,8 +1,31 @@
 using System.Runtime.InteropServices.Marshalling;
+using Microsoft.VisualBasic;
 
 class Solution
 {
-     
+     /// <summary>
+     /// 피자 나눠 먹기 (3)
+     /// </summary>
+     /// <param name="slice"></param>
+     /// <param name="n"></param>
+     /// <returns></returns>
+     public int Solution0120(int slice, int n)
+     {
+          int answer = 0;
+     //  for문 반복
+          // for (int i = 1; i <= n; i += slice)
+          // {
+          //      // 한판 추가
+          //  answer ++ ;
+          // }
+          
+          // whlie
+          while ( answer * slice < n )
+          {
+               answer ++;
+          }
+          return answer;
+     }
 
      /// <summary>
      /// 배열 자르기
