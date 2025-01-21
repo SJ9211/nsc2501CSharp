@@ -43,7 +43,7 @@ class Sample
             Console.WriteLine(c2);        
     }
        
-   public void Dictionary()
+   
 public void Dictionary()
     {
         // var
