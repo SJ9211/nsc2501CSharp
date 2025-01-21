@@ -4,6 +4,22 @@ using Microsoft.VisualBasic;
 class Solution
 {
      /// <summary>
+     /// 배열 두 배 만들기
+     /// </summary>
+     /// <param name="numbers"></param>
+     /// <returns></returns>
+    public int[] Solution0121(int[] numbers)
+    {
+          // numbers의 크기만큼 반복
+          for(int i = 0; i < numbers.Length; i ++)
+          {
+               // index에 해당하는 값을 두배해서 넣기
+               numbers[i] *=2;
+          }
+          // 결과를 리턴
+          return numbers;
+    }
+     /// <summary>
      /// 피자 나눠 먹기 (3)
      /// </summary>
      /// <param name="slice"></param>

@@ -44,6 +44,7 @@ class Sample
     }
        
    public void Dictionary()
+public void Dictionary()
     {
         // var
         var chr = new List<char>();

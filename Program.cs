@@ -3,13 +3,13 @@
     private static void Main(string[] args)
     {
         Solution sol = new Solution();
-        int[] intarray = new int[] { 1, 2, 3, 4, 5 };
+        int[] intarray = new int[] { 1, 2, 100, -99, 1, 2, 3 };
         string STR = "happy birthday!";
-        //Console.WriteLine(sol.Solution0120(4,12));
-        //Util.PrintIntArray(sol.solution01162(intarray, 1, 3));
+        //Console.WriteLine(sol.Solution0121());
+        Util.PrintIntArray(sol.Solution0121(intarray));
         
-         Sample sam = new Sample();
-         sam.StringsSample();  
+        //Sample sam = new Sample();
+        // sam.Dictionary();  
 
         //var obj = new CSVar{};
         //obj.Method1();
