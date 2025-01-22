@@ -7,6 +7,48 @@ using System.Xml;
 
 class Sample
 {
+    enum City
+    {
+        Seoul,
+        Deajun,
+        Busan = 5,
+        Jeju =10
+    }
+
+    [Flags]
+
+    enum Border
+    {
+
+        None = 0,
+        Top = 1,
+        Right = 2,
+        Bottom = 4,
+        Left = 8
+    }
+    public void EnumSample()
+    {
+        City myCity;
+        //  enum 타입에 값을 대입하는 방법
+        myCity = City.Seoul;
+        //  enum을 int로 변환 하는 방법
+        // (int)를 앞에 지정
+        int cityValue = (int) myCity;
+        if (myCity == City.Seoul) // enum 값을 비교하는 방법
+        {
+            Console.WriteLine("Welcome to Seoul");
+        }
+  
+        Border b = Border.Top | Border.Bottom | Border.Left;
+        if ((b & Border.Top) != 0)
+        {
+            if (b.HasFlag(Border.Bottom))
+            {
+                Console.WriteLine(b.ToString()); // (int)b => 13
+            }
+        }
+    }
+
     public void StringsSample()
         {
             string s1 = "C#";
