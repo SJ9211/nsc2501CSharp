@@ -8,11 +8,11 @@
         string[] s2 = new string[]{"com","b","d","p","c"};
         int[] intarray = new int[] { 1, 2, 100, -99, 1, 2, 3 };
         string STR = "happy birthday!";
-        Console.WriteLine(sol.Solution0122(s1, s2));
+       // Console.WriteLine(sol.Solution0122(s1, s2));
         //Util.PrintIntArray(sol.Solution0121(intarray));
         
-        //Sample sam = new Sample();
-        // sam.EnumSample();  
+        Sample sam = new Sample();
+        sam.Operator();  
 
         //var obj = new CSVar{};
         //obj.Method1();
