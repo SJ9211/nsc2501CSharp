@@ -1,8 +1,28 @@
+using System.Data;
+using System.Formats.Asn1;
+using System.Net.Http.Headers;
 using System.Runtime.InteropServices.Marshalling;
 using Microsoft.VisualBasic;
 
 class Solution
 {
+     /// <summary>
+     /// 아이스 아메리카노
+     /// </summary>
+     /// <param name="money"></param>
+     /// <returns></returns>
+     public int[] Solution0123(int money)
+     {
+          /*
+           const int COFFEE_PRICE = 5500;
+            int[] asnwer = new int[2];
+            asnwer[0] = money / COFFEE_PRICE;
+            asnwer[1] = money % COFFEE_PRICE;
+            return asnwer;
+          */
+          return new int[]{money / 5500, money % 5500};
+
+     }
      /// <summary>
      /// 배열의 유사도
      /// </summary>
