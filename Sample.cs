@@ -7,6 +7,55 @@ using System.Xml;
 
 class Sample
 {
+   
+    static bool verbose = false;
+    static bool continueOnError = false;
+    static bool logging = false;
+    
+
+    // 조건문
+    public void SwitchStatement()
+    {
+        string category = "포도"; //string.Empty;
+        int price = 100;
+
+        switch (category)
+        {
+            case "사과":
+                price = 1000;
+                break;
+            case "딸기":
+                price = 1100;
+                break;
+            case "포도":
+                price = 900;
+                break;
+            default:
+                price = 0;
+                break;
+        }
+        /*
+        if ( category == "사과")
+        {
+            price = 1000;
+        }
+        else if ( category == "딸기")
+        {
+            price = 1100;
+        }
+        else if ( category == "포도")
+        {
+            price = 900;
+        }
+        else
+        {
+            price = 0;
+        }
+        */
+       //Console.WriteLine($"price: {price}");
+       
+    }
+
     public void Operator()
     {
         // 나머지 연산자 %
