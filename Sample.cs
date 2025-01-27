@@ -7,13 +7,42 @@ using System.Xml;
 
 class Sample
 {
-   
-    static bool verbose = false;
+public void DoWhileSample ()
+{
+    int i = 100;
+   Console.Write("Do While:");
+    do
+    {
+        Console.WriteLine(i);
+        i++;
+           }
+                 while (i<10);
+                        Console.WriteLine();
+              
+              i = 100;
+              Console.Write("while:");
+       while( i < 10)
+       {
+        Console.WriteLine($"{i}");
+        i++;
+       }            
+       Console.WriteLine();
+}
+
+ const int MAX_LOOP = 10;
+ public void LoopSample()
+ {
+    //  for 증가식 => 감소식 (10...1)
+    for (int i = MAX_LOOP; 1 > 0 ; i--)
+    {
+        Console.WriteLine($"Loop {i}");
+    }
+ }
+   static bool verbose = false;
     static bool continueOnError = false;
     static bool logging = false;
-    
-
-    // 조건문
+  
+   // 조건문
     public void SwitchStatement()
     {
         string category = "포도"; //string.Empty;

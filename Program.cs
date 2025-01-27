@@ -4,15 +4,15 @@
     private static void Main(string[] args)
     {
         Solution sol = new Solution();
-        string[] s1 = new string[]{"a","b","c"};
+        string[] s1 = new string[]{"I", "Love", "Programmers."};
         string[] s2 = new string[]{"com","b","d","p","c"};
         int[] intarray = new int[] { 1, 2, 100, -99, 1, 2, 3 };
-        string STR = "Stanley1yelnatS";
-        Console.WriteLine(sol.Solution01242(STR,6,12));
-       // Util.PrintIntArray(sol.Solution0123(15000));
-        
+        string STR = "bus";
+         Console.WriteLine(sol.Solution01272(STR));
+          //Util.PrintIntArray(sol.Solution01272(s1));
+    
         //Sample sam = new Sample();
-        //sam.SwitchStatement();  
+        //sam.DoWhileSample();  
 
         //var obj = new CSVar{};
         //obj.Method1();

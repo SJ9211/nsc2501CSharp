@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.Data;
 using System.Formats.Asn1;
 using System.Net.Http.Headers;
@@ -7,6 +8,33 @@ using Microsoft.VisualBasic;
 
 class Solution
 {
+     /// <summary>
+     /// 모음 제거
+     /// </summary>
+     /// <param name="my_string"></param>
+     /// <returns></returns>
+     public string Solution01272(string my_string)
+     {             
+          return my_string.Replace("a","")
+                          .Replace("e","").Replace("i","")
+                          .Replace("o","").Replace("u","");
+     }
+     /// <summary>
+     /// 배열 원소의 길이
+     /// </summary>
+     /// <param name="strlist"></param>
+     /// <returns></returns>
+     public int[] Solution0127(string[] strlist)
+     {
+          int len = strlist.Length;
+          int[] answer = new int [len];
+          for (int i = 0; i < len; i++)
+          {
+               answer[i] = strlist[i].Length;
+          }
+          return answer;
+          
+               }
      public string Solution01242(string my_string, int s,int e)
      {
           // Reverse
