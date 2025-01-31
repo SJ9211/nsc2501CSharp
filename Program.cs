@@ -4,16 +4,15 @@
     private static void Main(string[] args)
     {
         Solution sol = new Solution();
-        string[] s1 = new string[]{"I", "Love", "Programmers."};
-        string[] s2 = new string[]{"com","b","d","p","c"};
-        int[] intarray = new int[] { 1, 2, 100, -99, 1, 2, 3 };
+        string[] s1 = new string[] { "I", "Love", "Programmers." };
+        string[] s2 = new string[] { "com", "b", "d", "p", "c" };
+        int[] intarray = new int[] { 1, 1, 1, 1, 2};
         string STR = "bus";
-         Console.WriteLine(sol.Solution01272(STR));
-          //Util.PrintIntArray(sol.Solution01272(s1));
-    
-        //Sample sam = new Sample();
-        //sam.DoWhileSample();  
+        Console.WriteLine(sol.Solution01312(7));
+        //Util.PrintIntArray(sol.Solution0131(intarray));
 
+        // Sample sam = new Sample();
+       
         //var obj = new CSVar{};
         //obj.Method1();
     }

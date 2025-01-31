@@ -7,6 +7,13 @@ using System.Xml;
 
 class Sample
 {
+    public IEnumerable<int> GetNumber()
+    {
+        yield return 10; //첫번째 루프에서 리턴되는 값
+        yield return 20; //두번째 루프에서 리턴되는 값
+        yield return 30; //세번째 루프에서 리턴되는 값
+    }
+
 public void DoWhileSample ()
 {
     int i = 100;
@@ -41,8 +48,7 @@ public void DoWhileSample ()
    static bool verbose = false;
     static bool continueOnError = false;
     static bool logging = false;
-  
-   // 조건문
+     
     public void SwitchStatement()
     {
         string category = "포도"; //string.Empty;

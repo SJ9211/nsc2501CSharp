@@ -2,6 +2,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Formats.Asn1;
 using System.Net.Http.Headers;
+using System.Reflection.Metadata.Ecma335;
 using System.Runtime.InteropServices.Marshalling;
 using System.Text;
 using Microsoft.VisualBasic;
@@ -9,13 +10,44 @@ using Microsoft.VisualBasic;
 class Solution
 {
      /// <summary>
+     /// 피자 나눠먹기 1
+     /// </summary>
+     /// <param name="n"></param>
+     /// <returns></returns>
+     public int Solution01312(int n)
+     {
+          int answer = 0;
+          //  온전한 피자 한판으로 먹을 수 있는 사람 수 
+          int piz = n / 7;
+          // 나머지 피자 조각 먹는 사람 수
+          int res = ((n % 7) == 0) ? 0 : 1;
+          answer = piz + res;
+          return answer;
+
+     }
+     /// <summary>
+     /// 배열 뒤집기
+     /// </summary>
+     /// <param name="num_list"></param>
+     /// <returns></returns>
+     public int [] Solution0131 (int[] num_list)
+     {
+          //int len = num_list.Length;  / 코드를 짧게 만들기위해 num_list.Length 를 len 으로 바꿀수있다
+          int[] answer = new int[num_list.Length];
+          for (int i = 0; i < num_list.Length; i++)
+          {
+               answer[num_list.Length - 1 - i] = num_list[i];
+          }
+          return answer;
+     }
+     /// <summary>
      /// 모음 제거
      /// </summary>
      /// <param name="my_string"></param>
      /// <returns></returns>
      public string Solution01272(string my_string)
-     {             
-          return my_string.Replace("a","")
+     {
+          return my_string.Replace("a", "")
                           .Replace("e","").Replace("i","")
                           .Replace("o","").Replace("u","");
      }
