@@ -13,8 +13,8 @@
 
         // Sample sam = new Sample();
 
-        //Util.MakeLotto();   static 이 있을때쓰는 방법
-       Util util = new Util();
-       util.MakeLotto();
+        Util.MakeLotto();  // static 이 있을때쓰는 방법
+       //Util util = new Util();
+       //util.MakeLotto();
     }
 }

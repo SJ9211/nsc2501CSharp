@@ -21,7 +21,7 @@ class Util
     /// <summary>
     /// 내 꿈을 실현시켜줄 함수
     /// </summary>
-    public  void MakeLotto()
+    public static void MakeLotto()
     {
         // 상수들
         const int MAX_NUMBER = 45;
