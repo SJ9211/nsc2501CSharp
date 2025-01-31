@@ -8,12 +8,13 @@
         string[] s2 = new string[] { "com", "b", "d", "p", "c" };
         int[] intarray = new int[] { 1, 1, 1, 1, 2};
         string STR = "bus";
-        Console.WriteLine(sol.Solution01312(7));
+        // Console.WriteLine(sol.Solution01312(7));
         //Util.PrintIntArray(sol.Solution0131(intarray));
 
         // Sample sam = new Sample();
-       
-        //var obj = new CSVar{};
-        //obj.Method1();
+
+        //Util.MakeLotto();   static 이 있을때쓰는 방법
+       Util util = new Util();
+       util.MakeLotto();
     }
 }
