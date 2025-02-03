@@ -6,14 +6,15 @@
         Solution sol = new Solution();
         string[] s1 = new string[] { "I", "Love", "Programmers." };
         string[] s2 = new string[] { "com", "b", "d", "p", "c" };
-        int[] intarray = new int[] { 1, 1, 1, 1, 2};
+        int[] intarray = new int[] { 13, 22, 53, 24, 15, 6};
         string STR = "bus";
-        // Console.WriteLine(sol.Solution01312(7));
+        Console.WriteLine(sol.Solution0203(intarray));
         //Util.PrintIntArray(sol.Solution0131(intarray));
 
-        // Sample sam = new Sample();
-
-        Util.MakeLotto();  // static 이 있을때쓰는 방법
+       // Sample sam = new Sample();
+       // sam.TryCatch();
+       // Util.MakeLotto();  
+       // static 이 있을때쓰는 방법
        //Util util = new Util();
        //util.MakeLotto();
     }

@@ -1,12 +1,41 @@
 using System.Collections;
 using System.Collections.Specialized;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Security.Cryptography.X509Certificates;
 using System.Xml;
 
 class Sample
 {
+    public void TryCatch()
+    {
+        int[] intarray = new int[] { 1, 2, 3, 4 };
+        // try-catch 없이 실행
+        DoSmonething(intarray);
+
+        // try-catch
+        try
+        {   // 실행하고자 하는 문장들
+            DoSmonething(intarray);
+        }
+        catch (System.Exception ex)
+        {
+            // 에러 처리
+            Console.WriteLine($"ERROR!!!:{ex}");
+            throw;
+        }
+
+
+
+    }
+
+    private void DoSmonething(int[] ia)
+    {
+        ia[5] = 0;
+    }
+    
+
     public IEnumerable<int> GetNumber()
     {
         yield return 10; //첫번째 루프에서 리턴되는 값
