@@ -10,6 +10,41 @@ using Microsoft.VisualBasic;
 class Solution
 {
      /// <summary>
+     /// 두 수의 연산값 구하기
+     /// </summary>
+     /// <param name="a"></param>
+     /// <param name="b"></param>
+     /// <returns></returns>
+     public int Solution0205(int a, int b)
+     {
+          int answer= 0;
+          // 첫번째 값 구하기
+          string temp = "" + a +b;
+          int first = Convert.ToInt32(temp);
+          // 두번째 값 구하기
+          int second = 2 * a * b;
+          //둘 비교하여 큰 값 리턴하기
+          /*
+          if (first >= second)
+          {
+               answer = first;
+          }
+          else // if ( first < second)
+          {
+               answer = second;
+          }
+          */
+          if ( first == second)
+          {
+               answer = first;
+          }
+          else
+          {
+               answer = Math.Max(first, second);
+          }
+          return answer;
+     }
+     /// <summary>
      /// 수 조작하기2
      /// </summary>
      /// <param name="numlog"></param>
