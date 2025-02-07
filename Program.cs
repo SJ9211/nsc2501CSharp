@@ -6,10 +6,10 @@
         Solution sol = new Solution();
         string[] s1 = new string[] { "I", "Love", "Programmers." };
         string[] s2 = new string[] { "com", "b", "d", "p", "c" };
-        int[] intarray = new int[] { 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] intarray = new int[] {-1, 2, 5, 6, 3};
         string STR = "wsdawsdassw";
-        //Console.WriteLine(sol.Solution0205(2,91));
-        Util.PrintIntArray(sol.Solution0206(3,10));
+        Console.WriteLine(sol.Solution0207(intarray));
+        //Util.PrintIntArray(sol.Solution0206(3,10));
 
         //Sample sam = new Sample();
        // sam.TryCatch();

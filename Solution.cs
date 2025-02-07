@@ -10,6 +10,38 @@ using Microsoft.VisualBasic;
 class Solution
 {
      /// <summary>
+     /// 홀수 vs 짝수
+     /// </summary>
+     /// <param name="num_list"></param>
+     /// <returns></returns>
+     public int Solution0207(int[] num_list)
+     {
+         // 홀수의 합을 넣을 변수 선언
+          int a = 0;
+         // 짝수의 합을 넣을 변수 선언
+          int b = 0;
+         // 주어진 배열 크기만큼 반복
+            for (int i =0; i< num_list.Length; i+=2)
+            {
+              a += num_list[i];             
+            }
+            for (int i =1; i<num_list.Length; i+=2)
+            {
+               b += num_list[i];
+            }
+             // 홀수냐 짝수냐 판별
+               if (a > b)
+               {
+                    return a;
+               }
+               else if ( a < b)
+               {
+                    return b;
+               }
+               else return a;
+               
+     }
+     /// <summary>
      /// 카운트 업
      /// </summary>
      /// <param name="start"></param>
