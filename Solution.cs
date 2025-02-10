@@ -10,6 +10,48 @@ using Microsoft.VisualBasic;
 class Solution
 {
      /// <summary>
+     /// 자릿수 더하기
+     /// </summary>
+     /// <param name="n"></param>
+     /// <returns></returns>
+    public int Solution02102(int n)
+    {     
+          int answer = 0;
+          // n 을 string으로 변환
+          string STR = n.ToString();
+          // string 을 처음부터 반복
+          foreach ( var item in STR)
+          {
+               // 각 char의 계산된 값을 더한다
+               answer += item;
+          }
+          return answer;
+          /*
+          int answer = 0;
+          while ( n > 0)
+          {
+               answer += n % 10;
+               n /= 10;
+          }
+          return answer;
+          */
+    }
+
+    
+     /// <summary>
+     /// 주사위의 개수
+     /// </summary>
+     /// <param name="box"></param>
+     /// <param name="n"></param>
+     /// <returns></returns>
+     public int Solution0210(int[] box, int n)
+     {
+         
+          int answer = (box[0] / n) * (box[1] / n) * (box[2] / n);
+          return answer;
+     }
+     
+     /// <summary>
      /// 홀수 vs 짝수
      /// </summary>
      /// <param name="num_list"></param>

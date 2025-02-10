@@ -6,9 +6,9 @@
         Solution sol = new Solution();
         string[] s1 = new string[] { "I", "Love", "Programmers." };
         string[] s2 = new string[] { "com", "b", "d", "p", "c" };
-        int[] intarray = new int[] {-1, 2, 5, 6, 3};
+        int[] intarray = new int[] {10, 8, 6};
         string STR = "wsdawsdassw";
-        Console.WriteLine(sol.Solution0207(intarray));
+        Console.WriteLine(sol.Solution02102(1234));
         //Util.PrintIntArray(sol.Solution0206(3,10));
 
         //Sample sam = new Sample();
