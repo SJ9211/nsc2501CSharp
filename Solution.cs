@@ -1,14 +1,69 @@
 using System.ComponentModel;
 using System.Data;
 using System.Formats.Asn1;
+using System.Globalization;
 using System.Net.Http.Headers;
 using System.Reflection.Metadata.Ecma335;
 using System.Runtime.InteropServices.Marshalling;
 using System.Text;
+using System.Xml.XPath;
 using Microsoft.VisualBasic;
 
 class Solution
 {
+     public int Solution02122(int a, int b)
+     {
+          int answer = 0;
+          if ((a % 2 == 1) && (b % 2 == 1))
+          {
+               answer = (a * a) + (b * b);
+          }
+          else if ((a % 2 == 0) && (b % 2 == 0))
+          {
+               if (a - b >= 0)
+               {
+                    answer = a - b;
+               }
+               else
+               {
+                    answer = (a - b) * -1;
+               }
+          }
+          else
+          {
+               answer = (a + b) * 2;
+          }
+          return answer;
+     }
+
+
+     /// <summary>
+     /// 뒤에서 5등 위로
+     /// </summary>
+     /// <param name="num_list"></param>
+     /// <returns></returns>
+     public int[] Solution0212(int[] num_list)
+     {
+          // List 사용
+          var list = new List<int>(num_list);
+          // List 정렬   (Sort 정렬)
+          list.Sort();
+          // index : for 문
+          var list2 = new List<int>();
+          for (int i = 5; i < list.Count; i++)
+          {
+               //다른 list에 넣기
+               list2.Add(list[i]);
+          }
+          // RemoveAt: 필요없는 항목 지우기
+          for (int i = 0; i < 5; i++)
+          {
+               list.RemoveAt(0);
+          }
+          // list를 int[] 로 변환해서 리턴
+          return list2.ToArray();
+     }
+     
      /// <summary>
      /// 짝수는 싫어요
      /// </summary>

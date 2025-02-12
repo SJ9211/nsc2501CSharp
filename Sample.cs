@@ -8,6 +8,54 @@ using System.Xml;
 
 class Sample
 {
+    public void nullableTest()
+    {
+        int? a = null;
+        int? b = 0;
+        int result = Nullable.Compare<int>(a, b);
+        Console.WriteLine(result);
+
+        double? c = 0.01;
+        double? d = 0.0100;
+        bool result2 = Nullable.Equals<double>(c,d);
+        Console.WriteLine(result2);
+    }
+    float sum = 0;
+    DateTime time;
+    bool? selected;
+
+    public void CheckInput(int? i, float? d, DateTime? time, bool? selected)
+    {
+        if (i.HasValue && d.HasValue)
+        {
+            this.sum = (float)i.Value + (float)d.Value;
+        }
+
+        if (!time.HasValue)
+            throw new ArgumentException();
+        else
+            this.time = time.Value;
+
+        //this.selected = selected ?? false;  아래와 동일함
+        if (selected == null)
+            this.selected = false;
+        else
+            this.selected = selected;
+    }
+    public void NullableSample()
+    {
+        int i = 0;
+        int? ii = null;
+        bool? b = null;
+        int?[] a = new int?[100];
+        //nullable 에 맞추기
+
+        if ( ii != null)
+        {
+            Console.WriteLine(i);
+        }
+
+    }
     struct MyPoint
     {
         public int X;
