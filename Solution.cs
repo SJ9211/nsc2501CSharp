@@ -11,6 +11,32 @@ using Microsoft.VisualBasic;
 
 class Solution
 {
+     /// <summary>
+     /// 배열의 원소만큼 추가하기
+     /// </summary>
+     /// <param name="arr"></param>
+     /// <returns></returns>
+     public int[] Solution0213(int[] arr)
+     {
+          var x = new List<int>();
+          // arr전체를 반복
+          foreach (var item in arr)
+          {
+               // 각 원소의 크기만큼 x에 추가
+               for (int i = 0; i < item; i++)
+               {
+                    x.Add(item);
+               }
+          }
+          return x.ToArray();
+     }
+
+     /// <summary>
+     /// 주사위 게임1
+     /// </summary>
+     /// <param name="a"></param>
+     /// <param name="b"></param>
+     /// <returns></returns> 
      public int Solution02122(int a, int b)
      {
           int answer = 0;

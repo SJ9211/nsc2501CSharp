@@ -8,10 +8,10 @@ internal class Program
         Solution sol = new Solution();
         string[] s1 = new string[] { "I", "Love", "Programmers." };
         string[] s2 = new string[] { "com", "b", "d", "p", "c" };
-        int[] intarray = new int[] { 12, 4, 15, 46, 38, 1, 14, 56, 32, 10};
+        int[] intarray = new int[] { 5, 1, 4};
         string STR = "0010";
-        Console.WriteLine(sol.Solution02122(3,5));
-       // Util.PrintIntArray(sol.Solution0212(intarray));
+        //Console.WriteLine(sol.Solution02122(3,5));
+       Util.PrintIntArray(sol.Solution0213(intarray));
 
         //Sample sam = new Sample();
       
