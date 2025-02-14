@@ -1,3 +1,7 @@
+#define TEST_ENV
+#define PC //ANDROID
+
+
 using System.Collections;
 using System.Collections.Specialized;
 using System.ComponentModel;
@@ -8,6 +12,25 @@ using System.Xml;
 
 class Sample
 {
+
+    // # 전처리기 지시어
+    public void PreProcess()
+    {
+#if ( TEST_ENV )
+        Console.WriteLine("Now Test env.");
+#if (ANDROID)
+        console.WriteLine("platform : android");
+#elif (IOS)
+        console.WriteLine("platfoum : IOS");
+#else
+        Console.WriteLine("platrorm : PC");
+#endif
+#else
+     console.WriteLine("Now production env.");
+#endif
+    }
+
+
     public void nullableTest()
     {
         int? a = null;
