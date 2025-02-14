@@ -10,11 +10,11 @@ internal class Program
         string[] s2 = new string[] { "com", "b", "d", "p", "c" };
         int[] intarray = new int[] { 5, 1, 4};
         string STR = "0010";
-        //Console.WriteLine(sol.Solution02122(3,5));
-       //Util.PrintIntArray(sol.Solution0213(intarray));
+        Console.WriteLine(sol.Solution0214(7,15));
+        //Util.PrintIntArray(sol.Solution0213(intarray));
 
-        Sample sam = new Sample();
-        sam.PreProcess();
+        //Sample sam = new Sample();
+        //sam.PreProcess();
 
         // ref 사용. 초기화 불필요
         int x = 1;

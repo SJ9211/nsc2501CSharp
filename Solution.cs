@@ -12,6 +12,27 @@ using Microsoft.VisualBasic;
 class Solution
 {
      /// <summary>
+     /// 세균 증식
+     /// </summary>
+     /// <param name="n"></param>
+     /// <param name="t"></param>
+     /// <returns></returns>
+     public int Solution0214(int n, int t)
+     {
+          return n << t;  // << 제곱곱하기  >> 나누기
+          
+          // return (int) (n * Math.Pow(2,t));
+          
+          /*
+          int answer = n;
+          for ( int i = 1; i <=t; i++)
+          {
+               answer *= 2;
+          }
+          return answer;
+          */
+     }
+     /// <summary>
      /// 배열의 원소만큼 추가하기
      /// </summary>
      /// <param name="arr"></param>
