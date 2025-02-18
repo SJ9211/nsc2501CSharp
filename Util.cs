@@ -1,6 +1,23 @@
 class Util
 {
     /// <summary>
+    /// 문자열 배열의 내용을 출력
+    /// </summary>
+    /// <param name="strarray"></param>
+   public static void PrintStringArray(string[] strarray)
+   {
+          Console.Write("{");
+        for (int i = 0; i < strarray.Length; i++)
+        {
+            if (i != 0)
+            {
+            Console.Write(",");
+            }
+            Console.Write($"{strarray[0]}");
+        }
+        Console.WriteLine("}");
+   }
+    /// <summary>
     /// 정수 배열의 내용을 출력
     /// </summary>
     /// <param name="intarray">출력할 배열</param>

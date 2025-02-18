@@ -10,12 +10,14 @@ internal class Program
         string[] s2 = new string[] { "com", "b", "d", "p", "c" };
         int[] intarray = new int[] { 5, 1, 4};
         string STR = "0010";
-        Console.WriteLine(sol.Solution0214(7,15));
-        //Util.PrintIntArray(sol.Solution0213(intarray));
+        //Console.WriteLine(sol.Solution0218(s1));
+        Util.PrintStringArray(sol.Solution0218(s1));
 
         //Sample sam = new Sample();
         //sam.PreProcess();
-
+        
+        
+        
         // ref 사용. 초기화 불필요
         int x = 1;
         double y = 1.0;
@@ -37,6 +39,22 @@ internal class Program
         return true;
     }
     
+    private void Animal()
+    {
+    Animal anima = new Animal();
+        anima.Age = 3;
+        anima.Name = "Ani";
+
+        dog Kang = new dog();
+        Kang.Age = 3;
+        Kang.Name = "Kane";
+        Kang.HowOld();
+
+        Bird sae = new Bird();
+        sae.Name = "puck";
+        sae.Age = 7;
+        sae.Fly();
+    }    
     
     //nssample nss = new nssample();
     MyCustomer myc = new MyCustomer();
