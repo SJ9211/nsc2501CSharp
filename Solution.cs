@@ -12,6 +12,28 @@ using Microsoft.VisualBasic;
 class Solution
 {
      /// <summary>
+     /// 최대값 만들기(1)
+     /// </summary>
+     /// <param name="numbers"></param>
+     /// <returns></returns>
+     public int Solution2019(int[] numbers)
+     {
+          int answer= 0;
+          // for 문을 중첩으로 도린다
+          for ( int i =0; i < numbers.Length -1; i++) 
+          {
+               for( int j =i +1; j < numbers.Length; j++)
+               // 각각의 인덱스 값을 곱해서 나온 값과 현재 최대값을 비교
+               if ( answer < numbers[i] * numbers[j])
+               {
+                    // 큰값을 최대값으로
+                    answer = numbers[i] * numbers[j];
+                }
+          }
+          return answer;
+     }
+     
+     /// <summary>
      /// 5명씩
      /// </summary>
      /// <param name="names"></param>
