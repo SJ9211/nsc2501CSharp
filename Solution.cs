@@ -12,6 +12,25 @@ using Microsoft.VisualBasic;
 class Solution
 {
      /// <summary>
+     /// 가까운 1 찾기
+     /// </summary>
+     /// <param name="arr"></param>
+     /// <param name="idx"></param>
+     /// <returns></returns>
+     public int Solution0228(int[] arr, int idx)
+     {
+          int answer = -1;
+          for (int i = idx; i < arr.Length; i++)
+          {
+               if (arr[i] == 1)
+               {
+                    answer = i;
+                    break;
+               }
+          }
+          return answer;
+     }
+     /// <summary>
      /// 최대값 만들기(1)
      /// </summary>
      /// <param name="numbers"></param>
