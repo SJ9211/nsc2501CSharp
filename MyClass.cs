@@ -1,3 +1,13 @@
+partial class Class1
+{
+    public void Get() {}
+}
+
+partial class Class1
+{
+    public void put() {}
+}
+
 class MyClass
 {
     

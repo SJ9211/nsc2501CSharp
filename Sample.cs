@@ -10,6 +10,10 @@ using System.Diagnostics.CodeAnalysis;
 using System.Security.Cryptography.X509Certificates;
 using System.Xml;
 
+partial class Class1
+{
+    public void Run() {}
+}
 class Sample
 {
 
