@@ -10,7 +10,8 @@ internal class Program
         string[] s2 = new string[] { "com", "b", "d", "p", "c" };
         int[] intarray = new int[] { 5, 1, 4};
         string STR = "0010";
-        Console.WriteLine(sol.Solution0218(s1));
+        int[,] int2 = new int[,]{{0,0,0,0,0},{0,0,0,0,0},{0,0,0,0,0,},{0,0,1,0,0},{0,0,0,0,0,}};
+        Console.WriteLine(sol.Solution0407(int2));
         //Util.PrintStringArray(sol.Solution0218(s1));
 
         //Sample sam = new Sample();
